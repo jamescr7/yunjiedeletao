@@ -1,6 +1,18 @@
 // 
 @main-color:#006699;
-
+img{
+    vertical-align: middle;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    color: #666;
+}
 #header{
     z-index: 999;
     height: 45px;
@@ -19,6 +31,25 @@
     position: absolute;
     right: 20px;
     top: 14px;
+    }
+    .fa-arrow-left{
+        position: absolute;
+        left: 10px;
+        top: 14px;
+        color: #fff;
+    }
+    form{
+        padding-left: 35px;
+        padding-right: 45px;
+        >input{
+            width: 100%;
+            background-color: #fff;
+            height: 30px;
+            margin-top: 7px;
+            font-size: 14px;
+            text-align: left;
+            color: #000000;
+        }
     }
 }
 // 底部的公共样式
@@ -57,4 +88,11 @@ html,body{
     padding-bottom: 50px;
     height: 100%;
     background-color: #fff;
+}
+[class^="fa-"],[class*="fa-"]{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
 }

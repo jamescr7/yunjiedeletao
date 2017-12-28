@@ -90,3 +90,55 @@ body {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
 }
+#main .search-form {
+  position: relative;
+  top: 10px;
+  left: 5px;
+  padding-right: 70px;
+}
+#main .search-form .search-input {
+  height: 30px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #006699;
+  text-align: left;
+  margin-bottom: 0px;
+  font-size: 14px;
+  border-radius: 5px 0 0 5px;
+}
+#main .search-form .btn-search {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  width: 60px;
+  height: 30px;
+  background-color: #006699;
+  border-color: #006699;
+  border-radius: 0 5px 5px 0;
+}
+#main .search-history {
+  padding: 20px;
+}
+#main .search-history .search-history-heading > span {
+  font-size: 14px;
+}
+#main .search-history .search-history-heading > span:first-child {
+  float: left;
+}
+#main .search-history .search-history-heading > span:last-child {
+  float: right;
+}
+#main .search-history .search-history-list {
+  margin-top: 10px;
+}
+#main .search-history .search-history-list > ul {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+#main .search-history .search-history-list > ul > li > a {
+  display: block;
+  font-size: 14px;
+}
+#main .search-history .search-history-list > ul > li > a > i {
+  float: right;
+}

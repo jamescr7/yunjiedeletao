@@ -1,0 +1,60 @@
+@import 'base.less';
+
+#main{
+    // 左侧的分类菜单
+    background-color: #eee;
+    .category-left{
+        float: left;
+        >ul{
+            >li{
+                
+                >a{
+                    background-color: #fff;
+                    width: 80px;
+                    height: 40px;
+                    display: block;
+                    border-right: 1px solid #ccc;
+                    border-bottom: 1px solid #ccc;
+                    line-height: 40px;
+                    text-align: center;
+                    font-size: 14px;
+                }
+                &.active{
+                    >a{
+                        background-color: #ccc;
+                        color: @main-color;
+                    }
+                }
+            }
+        }
+    }
+    // 右侧的分类商品
+    .category-right{
+        overflow: hidden;
+        padding: 10px;
+        width: auto;
+        left: 80px;
+        top: 45px;
+        bottom: 50px;
+        .mui-scroll{
+            position: relative;
+            
+            >.mui-row{
+                background-color: #fff;
+                >div{
+                    >a{
+                        display: block;
+                        text-align: center;
+                        >img{
+                            width: 100%;
+                        }
+                        >p{
+                            font-size: 12px;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

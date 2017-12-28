@@ -1,0 +1,61 @@
+@import 'base.less';
+// 搜索的主体
+#main{
+    .search-form{
+       position: relative;
+       top:10px;
+        left: 5px;
+       padding-right: 70px;
+        .search-input{
+            height: 30px;
+            background-color: #fff;
+            color: #000;
+            border: 1px solid  @main-color;
+            text-align: left;
+            margin-bottom: 0px;
+            font-size: 14px;
+            border-radius: 5px 0 0 5px;
+        }
+        .btn-search{
+            position: absolute;
+            right: 10px;
+            top: 0;
+            width: 60px;
+            height: 30px;
+            background-color: @main-color;
+            border-color:  @main-color;
+            border-radius: 0 5px 5px 0;
+        }
+    }
+    // 搜索历史区域
+    .search-history{
+        padding: 20px;
+        .search-history-heading{
+            >span{
+                font-size: 14px;
+                &:first-child{
+                    float: left;
+                }
+                &:last-child{
+                    float: right;
+                }
+            }
+        }
+        .search-history-list{
+            margin-top: 10px;
+            >ul{
+                border-left: 1px solid #ccc;
+                border-right: 1px solid #ccc;
+                >li{
+                    >a{
+                        display: block;
+                        font-size: 14px;
+                        >i{
+                            float: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
